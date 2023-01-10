@@ -6,7 +6,7 @@ html {
 	vertical-align: baseline;
     
 }
-body {
+body { /*background image and height and min width parameters */
     line-height: 1;
     font-family:'Times New Roman', Times, serif
     font-size: 2.0em;
@@ -26,7 +26,7 @@ body {
 
 h1, 
 h2, 
-h3 {
+h3 { /* spacing for the headings of each container */
     margin-bottom: 0.25rem;
     color: var(#eb0606);
     font-weight: 500;
@@ -51,7 +51,7 @@ code {
     font-family: "Harrington", fantasy;
   }
 
-main {
+main { 
     width: 100%;
     margin: 2em auto;
   }
@@ -68,10 +68,10 @@ main {
     justify-content: space-around;
 }
 
-.hexagon {
-    width: 700px;
-    height: 300px;
-    background-color: #333;
+.hexagon { /* defining the container shape and dimensions */
+    width: 33%;
+    height: 33%;
+    opacity: 0.5;
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     -ms-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);  
@@ -79,7 +79,7 @@ main {
     margin-bottom: 1.5em
 }
 
-.code-hexagon {
+.code-hexagon { /* placement of containers on screen */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -91,7 +91,7 @@ main {
     transition: width
 }
 
-.code-hexagon .piece-title {
+.code-hexagon { /* placement of code bit */
     position: relative;
     margin: 5em 0 1.5em 0;
     padding: 1em 1em;
@@ -102,18 +102,18 @@ main {
     transition: cubic-bezier(.06,.93,.87,.27)
 }
 
-.hexagon:hover {
+.hexagon:hover { /* frosted highlight feature */
     box-shadow: inset 15px 15px 15px var(#0630eb), 15 15 15px var(#d161f0); 
     background-color: rgba(115, 0, 255, 0.15);   
    backdrop-filter: blur(5px);
 
 }
 
-.code-hexagon .code-bit {
+.code-hexagon .code-bit { /* placement of hexagons in relation to each other */
     flex-grow: 1;
 }
 
-.code-hexagon pre {
+.code-hexagon pre { 
     white-space: pre-wrap;
     overflow-x: scroll;
     overflow-y: scroll;
@@ -157,6 +157,4 @@ main {
     
     
   
-  @media (max-width: 1199px) {
-    /* Your styles go here */
-  }
+  
