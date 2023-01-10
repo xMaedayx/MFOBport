@@ -4,21 +4,23 @@ html {
 	border: 0;
 	font-size: 90%;
 	vertical-align: baseline;
+    
 }
 body {
     line-height: 1;
     font-family:'Times New Roman', Times, serif
-    font-size: 2.0rem;
-        min-height: 100%;
+    font-size: 2.0em;
+        min-height: 400px;
         line-height: 1;
         color: var(#d161f0);
         background-color: var(#c361f0);
-        background-image: url("forbiddenPlanet.PNG");
-        background-color: #98e0f9;
-        height: 500px;
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat
+        background-color: var(#c361f0);
+        background-image: url("forbiddenPlanet.PNG");
+        background-color: #98e0f9;
+        height: 900px
    
 }
 
@@ -29,14 +31,14 @@ h3 {
     color: var(#eb0606);
     font-weight: 500;
     line-height: 1.0;
-    font-size: 4rem;
+    font-size: 4em;
 }
 
 header {
     width: 90%;
     margin: 0 auto;
-    padding: 2.5rem;
-    text-align: center; 
+    padding: 2.5em;
+    text-align: center;
 }
 
 header h1.page-header {
@@ -51,7 +53,7 @@ code {
 
 main {
     width: 100%;
-    margin: 2rem auto;
+    margin: 2em auto;
   }
 .row {
     display: flex;
@@ -67,8 +69,8 @@ main {
 }
 
 .hexagon {
-    width: 200px;
-    height: 115px;
+    width: 700px;
+    height: 300px;
     background-color: #333;
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -81,7 +83,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 80%;
+    min-height: 96%;
     padding: 3em;
     color: var(#c361f0);
     outline: 8px ridge rgba(50, 180, 220, 0.6);
@@ -115,7 +117,7 @@ main {
     white-space: pre-wrap;
     overflow-x: scroll;
     overflow-y: scroll;
-    tab-size: 7;
+    tab-size: 5;
     padding: 2em 1em;
     color: var(#98e0f6);
     border-radius: 8px;
@@ -123,3 +125,38 @@ main {
     align-items: center; 
 
 }
+
+@media (min-width: 1200px) {
+    .content {
+        float: left;
+        width: 70%;
+      }
+      .sidebar {
+        float: right;
+        width: 30%;
+      }
+    
+      /* Increase the font size of the headings */
+      h1 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+    
+      /* Add a border to the site */
+      body {
+        border: 1px solid #333;
+      }
+    }
+   
+    
+    
+    
+  
+  @media (max-width: 1199px) {
+    /* Your styles go here */
+  }
